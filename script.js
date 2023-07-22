@@ -162,7 +162,7 @@ async function fetchIP() {
     
     const geoResponse = await fetch('https://ipapi.co/json/');
     const geodata = await geoResponse.json();
-    country = geodata.country
+    country = geodata.country_name;
     
     
 }
